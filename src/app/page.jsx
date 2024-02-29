@@ -1,4 +1,5 @@
 import Image from "next/image"
+import ToggleDarkMode from "@/components/layout/ToggleDarkMode"
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
           width={800}
           height={400}
         />
+
+        <ToggleDarkMode />
       </section>
     </main>
   )
