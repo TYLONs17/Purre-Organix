@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import Link from "next/link"
 import OrganixLogo from "@/components/icons/OrganixLogo"
 import { FaSearch, FaUser, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa"
+import ToggleDarkMode from "@/components/layout/ToggleDarkMode"
 
 export default function Navbar() {
   const [search, setSearch] = useState("")
@@ -54,6 +55,8 @@ export default function Navbar() {
           </div>
         </>
       )}
+
+      <ToggleDarkMode />
 
       <div className="hidden sm:flex justify-around items-center gap-4">
         <div className="flex gap-4">

@@ -3,6 +3,7 @@ import "./globals.css"
 
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { ThemeProvider } from "@/context/ThemeContext"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -15,11 +16,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navigation />
+        <ThemeProvider >
 
-        {children}
+          <Navigation />
 
-        <Footer />
+          <main className={`bg-gradient-radial from-green-800 to-green-100 dark:from-green-400 dark:to-black dark:text-green-200 text-green-950`}>{children}</main>
+          
+          <Footer />
+
+        </ThemeProvider>
       </body>
     </html>
   )

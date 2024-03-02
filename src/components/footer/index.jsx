@@ -6,7 +6,7 @@ export default function Footer() {
 
 
     return (
-        <footer className="text-green-200 dark:bg-green-950 bg-green-200  border-t-4 dark:border-green-400 border-green-950 rounded-t-lg shadow-md md:shadow-lg dark:shadow-green-300 shadow-green-800 ">
+        <footer className="text-green-200 dark:bg-green-950 bg-green-200  border-t-4 dark:border-green-400 border-green-950 rounded-t-lg shadow-top-md md:shadow-top-lg dark:shadow-green-300 shadow-green-800 ">
             <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                 <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
                     <a className="flex title-font font-medium dark:text-green-200 items-center md:justify-start justify-center text-green-950">
@@ -83,16 +83,16 @@ export default function Footer() {
                         <a href="https://github.com/JALES25" rel="noopener noreferrer" className="text-green-400 ml-1 font-light text-sm italic" target="_blank">@TYLONs17</a>
                     </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                        <a className="dark:text-green-950  text-green-500 hover:text-blue-700">
+                        <a className="dark:text-green-950  text-green-500 hover:text-blue-700 dark:hover:text-blue-700 active:opacity-80">
                             <FaFacebook className="w-8 h-8 " />
                         </a>
-                        <a className="ml-3 dark:text-green-950  text-green-500 hover:text-blue-900">
+                        <a className="ml-3 dark:text-green-950  text-green-500 hover:text-blue-900 dark:hover:text-blue-900 active:opacity-80">
                             <FaTwitter className="w-8 h-8 " />
                         </a>
-                        <a className="ml-3 dark:text-green-950  text-green-500 hover:text-purple-800">
+                        <a className="ml-3 dark:text-green-950  text-green-500 hover:text-purple-800 dark:hover:text-purple-800 active:opacity-80">
                             <FaInstagram className="w-8 h-8 " />
                         </a>
-                        {/* <a className="ml-3 dark:text-green-950  text-green-500 hover:text-blue-600">
+                        {/* <a className="ml-3 dark:text-green-950  text-green-500 hover:text-blue-600 dark:hover:text-blue-600 active:opacity-80">
                             <FaLinkedin className="w-8 h-8 " />
                         </a> */}
                     </span>

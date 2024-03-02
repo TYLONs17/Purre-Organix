@@ -1,32 +1,18 @@
 "use client"
 
-import { useEffect, useState } from 'react'
+import { useContext } from 'react'
+import { FiSun, FiMoon } from 'react-icons/fi'
+import { ThemeContext } from '@/context/ThemeContext'
+
 
 export default function ToggleDarkMode() {
-  const [darkMode, setDarkMode] = useState(false)
-
-  // On component mount, check if dark mode is already enabled
-  useEffect(() => {
-    if (window.localStorage.getItem('darkMode') === 'true') {
-      setDarkMode(true)
-      document.documentElement.classList.add('dark')
-    }
-  }, [])
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
-    if (!darkMode) {
-      document.documentElement.classList.add('dark')
-      window.localStorage.setItem('darkMode', 'true')
-    } else {
-      document.documentElement.classList.remove('dark')
-      window.localStorage.setItem('darkMode', 'false')
-    }
-  }
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext)
 
   return (
-    <button onClick={toggleDarkMode} className="p-2 bg-green-500 text-white rounded-full active:bg-green-200">
-      Toggle Dark Mode
-    </button>
+    <div>
+      <button onClick={toggleDarkMode} className={`p-2 text-white rounded-full active:bg-green-200 active:opacity-75 hover:border-2 hover:border-green-500 transition duration-200 ease-in-out ${darkMode ? "bg-green-200" : "bg-green-950"}`}>
+        {darkMode ? <FiSun className="text-green-900" /> : <FiMoon className="text-green-400" />}
+      </button>
+    </div>
   )
 }
