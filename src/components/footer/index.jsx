@@ -1,6 +1,7 @@
 import React from "react"
 import OrganixLogo from "../icons/OrganixLogo"
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import Link from "next/link"
 
 export default function Footer() {
 
@@ -9,9 +10,9 @@ export default function Footer() {
         <footer className="text-green-200 dark:bg-green-950 bg-green-200  border-t-4 dark:border-green-400 border-green-950 rounded-t-lg shadow-top-md md:shadow-top-lg dark:shadow-green-300 shadow-green-800 ">
             <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                 <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-                    <a className="flex title-font font-medium dark:text-green-200 items-center md:justify-start justify-center text-green-950">
-                        <OrganixLogo /> 
-                    </a>
+                    <Link href="/" className="flex title-font font-medium dark:text-green-200 items-center md:justify-start justify-center text-green-950">
+                            <OrganixLogo /> 
+                    </Link>
                     <p className="mt-2 text-sm dark:text-green-400 text-green-700 italic font-bold">Healthy living <br /> (+) <br /> A pure taste of nature</p>
                 </div>
                     <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
