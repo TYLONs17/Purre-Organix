@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import ContactForm from '@/components/forms/ContactForm'
+import ContactForm from '../../components/forms/ContactForm'
+
 
 const ContactPage = () => {
   const iframeUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0000000000005!2d-122.0840006846785!3d37.42200097981947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3f2f4e3d3d%3A0x7f3f7e3f2f4e3d3d!2sGoogleplex!5e0!3m2!1sen!2sca!4v1631530000000!5m2!1sen!2sca"

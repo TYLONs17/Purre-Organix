@@ -17,8 +17,21 @@ const AboutPage = () => {
           <Image className="w-full md:w-1/2 rounded-2xl" src="/images/pexels-welcome-about.jpg" width="800" height="400" alt="welcome with smile" />
 
           <div className="mt-4 md:mt-0 md:w-1/2 self-center">
-            Our market is a passionate purveyor of the finest organic produce, cultivated with love and respect for the earth. 
-            We are committed to providing our community with access to the freshest, most flavorful fruits, vegetables, and herbs, all grown using sustainable practices that nourish both body and soul.
+            <p>
+              Our market is a passionate purveyor of the finest organic produce, cultivated with love and respect for the earth. 
+              We are committed to providing our community with access to the freshest, most flavorful fruits, vegetables, and herbs, all grown using sustainable practices that nourish both body and soul.
+            </p>
+
+            <br />
+
+            <div className="mt-4 md:mt-0 md:w-1/2 self-center">
+              <p className="mb-2">Our commitment to quality extends beyond our produce to include a wide range of organic products, including:</p>
+              <ul className="list-disc list-inside">
+                <li>Organic skincare</li>
+                <li>Supplements</li>
+                <li>Food products</li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -36,16 +49,15 @@ const AboutPage = () => {
             <h2 className="text-3xl font-bold sm:text-4xl">What makes us special</h2>
 
             <p className="mt-4 text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores iure fugit totam
-              iste obcaecati. Consequatur ipsa quod ipsum sequi culpa delectus, cumque id tenetur
-              quibusdam, quos fuga minima.
+              At Pure Organix, we are dedicated to providing our customers with the highest quality organic products. 
+              Our commitment to sustainability, health, and wellness is reflected in everything we do, from the way we source our ingredients to the way we package and deliver our products.
             </p>
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
             <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                <FaCartFlatbed className="h-5 w-5 text-white" />
+              <span className="shrink-0 rounded-lg bg-gray-800 p-4 bg-opacity-50">
+                <FaCartFlatbed className="h-5 w-5" />
               </span>
               
               <div>
@@ -60,8 +72,8 @@ const AboutPage = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                <IoMdTime className="h-5 w-5 text-white" />
+              <span className="shrink-0 rounded-lg bg-gray-800 p-4 bg-opacity-50">
+                <IoMdTime className="h-5 w-5" />
               </span>
 
               <div>
@@ -76,7 +88,7 @@ const AboutPage = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
+              <span className="shrink-0 rounded-lg bg-gray-800 p-4 bg-opacity-50">
                 {/* <FaRegHeart className="h-5 w-5" /> */}
                 <FaHeartbeat className="h-5 w-5" />
               </span>
@@ -93,7 +105,7 @@ const AboutPage = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
+              <span className="shrink-0 rounded-lg bg-gray-800 p-4 bg-opacity-50">
                 <GiFoodTruck className="h-5 w-5" />
               </span>
 
@@ -109,7 +121,7 @@ const AboutPage = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
+              <span className="shrink-0 rounded-lg bg-gray-800 p-4 bg-opacity-50">
                 <GiFarmer className="h-5 w-5" />
               </span>
             
@@ -126,7 +138,7 @@ const AboutPage = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
+              <span className="shrink-0 rounded-lg bg-gray-800 p-4 bg-opacity-50">
                 <FaBook className="h-5 w-5" />
               </span>
 

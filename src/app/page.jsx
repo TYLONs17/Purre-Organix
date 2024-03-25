@@ -1,7 +1,7 @@
 import Image from "next/image"
-import ToggleDarkMode from "@/components/layout/ToggleDarkMode"
-import LandingPage from "@/components/landingPage"
-import Ico1 from "@/components/icons/Ico1"
+import ToggleDarkMode from "../components/layout/ToggleDarkMode"
+import LandingPage from "../components/landingPage"
+import Ico1 from "../components/icons/Ico1"
 
 export default function Home() {
   return (
