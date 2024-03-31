@@ -1,14 +1,18 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import Link from "next/link"
 import OrganixLogo from "../../../components/icons/OrganixLogo"
 import { FaSearch, FaUser, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa"
 import ToggleDarkMode from "../../../components/layout/ToggleDarkMode"
+import { ShoppingContext } from "../../../context/ShoppingContext"
+// import CartIcon from "../../../components/shop/CartIcon"
 
 export default function Navbar() {
   const [search, setSearch] = useState("")
   const [isOpen, setIsOpen] = useState(false)
+  const { cartOpen, toggleCartOpen } = useContext(ShoppingContext)
+  
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -50,9 +54,10 @@ export default function Navbar() {
                 <FaUser className="mr-1 text-2xl text-green-600 rounded-full" />
                 Login
             </Link> 
-            <Link href="/cart" className="p-2 flex justify-center items-center border-b-2 border-transparent hover:border-green-400 hover:text-green-400 rounded-xl ">
+            <Link href="#" onClick={toggleCartOpen} className="p-2 flex justify-center items-center border-b-2 border-transparent hover:border-green-400 hover:text-green-400 rounded-xl ">
                 <FaShoppingCart className="mr-1 text-2xl text-green-600" />
                 Cart
+                {/* <CartIcon /> */}
             </Link>
           </div>
         </>
@@ -81,9 +86,10 @@ export default function Navbar() {
                 <FaUser className="mr-1  p-1 text-4xl text-green-600  rounded-full border border-green-500" />
                 Login
             </Link> 
-            <Link href="/cart" className="cursor-pointer p-2 flex justify-center items-center border-b-2 border-transparent hover:border-green-400 dark:text-green-200 text-green-600 rounded-xl hover:scale-105 transition duration-500 ease-in-out ">
+            <Link href="#" onClick={toggleCartOpen} className="cursor-pointer p-2 flex justify-center items-center border-b-2 border-transparent hover:border-green-400 dark:text-green-200 text-green-600 rounded-xl hover:scale-105 transition duration-500 ease-in-out ">
                 <FaShoppingCart className="mr-1 text-2xl text-green-600 " />
                 Cart
+                {/* <CartIcon /> */}
             </Link>
         </div>
       </div>

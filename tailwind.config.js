@@ -20,6 +20,10 @@ module.exports = {
           'secondary': '#34D399', // green-400
           'background': '#064E3B', // green-950
           'accent': '#10B981' // green-300
+        },
+        'checkout': {
+         'background': '#141d2b',
+          'accent': '#1a2639',
         }
       },
       backgroundImage: {
