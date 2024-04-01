@@ -38,16 +38,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 SITE PREVIEW SCREENSHOTS
 
-![Screenshot](public/site/dark-home.png)
-![Screenshot](public/site/dark-about.png)
-![Screenshot](public/site/dark-contact.png)
-![Screenshot](public/site/dark-shop.png)
-![Screenshot](public/site/dark-shop-categories.png)
-![Screenshot](public/site/dark-shop-checkout.png)
+![Screenshot](./public/site/dark-home.png)
+![Screenshot](./public/site/dark-about.png)
+![Screenshot](./public/site/dark-contact.png)
+![Screenshot](./public/site/dark-shop.png)
+![Screenshot](./public/site/dark-shop-categories.png)
+![Screenshot](./public/site/dark-shop-checkout.png)
 
-![Screenshot](public/site/light-home.png)
-![Screenshot](public/site/light-about.png)
-![Screenshot](public/site/light-contact.png)
-![Screenshot](public/site/light-shop.png)
-![Screenshot](public/site/light-shop-categories.png)
-![Screenshot](public/site/light-shop-checkout.png)
+![Screenshot](./public/site/light-home.png)
+![Screenshot](./public/site/light-about.png)
+![Screenshot](./public/site/light-contact.png)
+![Screenshot](./public/site/light-shop.png)
+![Screenshot](./public/site/light-shop-categories.png)
+![Screenshot](./public/site/light-shop-checkout.png)
