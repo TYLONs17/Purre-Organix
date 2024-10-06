@@ -42,11 +42,37 @@ module.exports = {
         'top-sm': '0 -1px 2px 0 rgba(0, 0, 0, 0.05)',
         'top-md': '0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06)',
         'top-lg': '0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px 6px -2px rgba(0, 0, 0, 0.05)',
-      }
+        'left-top-bottom-sm': '1px -1px 2px rgba(0, 0, 0, 0.05), -1px 1px 2px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05)',
+        'left-top-bottom-md': '2px -2px 4px rgba(0, 0, 0, 0.1), -2px 2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1)',
+        'left-top-bottom-lg': '4px -4px 8px rgba(0, 0, 0, 0.15), -4px 4px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.15)',
+      },
+      textShow: {
+        'outline': '2px 2px 0px rgba(0, 0, 0, 1)',
+        'outline-white': '2px 2px 0px rgba(255, 255, 255, 1)',
+        'outline-dark-green': '2px 2px 0px rgba(0, 128, 0, 1)', 
+        'outline-light-green': '2px 2px 0px rgba(144, 238, 144, 1)',
+      },
     },
   },
   plugins: [
     require('tailwind-extended-shadows'),
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.text-outline': {
+          textShadow: '2px 2px 0px rgba(0, 0, 0, 1)',
+        },
+        '.text-outline-white': {
+          textShadow: '2px 2px 0px rgba(255, 255, 255, 1)',
+        },
+        '.text-outline-dark-green': {
+          textShadow: '2px 2px 0px rgba(0, 128, 0, 1)',
+        },
+        '.text-outline-light-green': {
+          textShadow: '2px 2px 0px rgba(144, 238, 144, 1)',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
   ],
 };
 

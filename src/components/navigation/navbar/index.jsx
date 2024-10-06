@@ -3,25 +3,15 @@
 import React, { useState, useContext } from "react"
 import Link from "next/link"
 import OrganixLogo from "../../../components/icons/OrganixLogo"
+import SearchBar from "../../../components/utils/SearchBar"
 import { FaSearch, FaUser, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa"
 import ToggleDarkMode from "../../../components/layout/ToggleDarkMode"
 import { ShoppingContext } from "../../../context/ShoppingContext"
 // import CartIcon from "../../../components/shop/CartIcon"
 
 export default function Navbar() {
-  const [search, setSearch] = useState("")
   const [isOpen, setIsOpen] = useState(false)
   const { cartOpen, toggleCartOpen } = useContext(ShoppingContext)
-  
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(search)
-  }
-
-  const handleClick = () => {
-    // Redirect to search results page
-  }
 
   return (
     <section className="flex flex-col sm:flex-row justify-between items-center gap-4 mx-4 p-4 px-8 ">
@@ -50,7 +40,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex gap-2 mt-4 sm:mt-0">
-            <Link href="/login" className="p-2 flex justify-center items-center border-b-2 border-transparent hover:border-green-400 hover:text-green-400 rounded-xl ">
+            <Link href="/profile/login" className="p-2 flex justify-center items-center border-b-2 border-transparent hover:border-green-400 hover:text-green-400 rounded-xl ">
                 <FaUser className="mr-1 text-2xl text-green-600 rounded-full" />
                 Login
             </Link> 
@@ -74,15 +64,10 @@ export default function Navbar() {
             <Link href="/contact" className="text-xl p-2 border-y-2 border-t-transparent hover:border-t-green-400 border-green-400 rounded-xl dark:hover:text-green-400 hover:text-green-800 dark:text-green-200 text-green-600 dark:hover:bg-green-900 hover:bg-green-300 active:opacity-85">Contact</Link>
         </div>
 
-        <div className="">
-            <form onSubmit={handleSubmit} className="flex max-w-sm md:max-w-xs mx-auto ">
-                <input value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder="Search for products..." className="w-1/2  rounded-l-2xl border-y-4 border-green-400 text-green-950 p-2 flex-grow "  />
-                <button onClick={handleClick} className="p-2 bg-green-400 hover:bg-green-600 text-white rounded-r-2xl border-y-4 border-green-400 hover:border-green-600 transition-colors duration-200 "><FaSearch /></button>
-            </form>
-        </div>
+        <SearchBar />
 
         <div className="flex gap-2">
-            <Link href="/login" className="cursor-pointer p-2 flex justify-center items-center border-b-2 border-transparent hover:border-green-400 dark:text-green-200 text-green-600 rounded-xl hover:scale-105 transition duration-500 ease-in-out ">
+            <Link href="/profile/login" className="cursor-pointer p-2 flex justify-center items-center border-b-2 border-transparent hover:border-green-400 dark:text-green-200 text-green-600 rounded-xl hover:scale-105 transition duration-500 ease-in-out ">
                 <FaUser className="mr-1  p-1 text-4xl text-green-600  rounded-full border border-green-500" />
                 Login
             </Link> 

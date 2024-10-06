@@ -3,7 +3,7 @@ import React from "react"
 export default function OrganixLogo () {
     return (
         <section className="cursor-pointer flex justify-center items-center bg-green-300 gap-2 sm:gap-4 p-2 rounded-2xl hover:shadow-lg hover:shadow-green-400 active:opacity-85">
-                <div className="w-[2rem] md:w-[4rem] h-[1.6rem] md:h-[3.6rem]">
+                <div className="spin-heartbeat2 w-[2rem] md:w-[4rem] h-[1.6rem] md:h-[3.6rem]">
                     <svg height="100%" width="100%" >      
                         <g filter="url(#comp-kaeyqv6u-shadow_comp-kaeyqv6u)">
                             {/* <!--?xml version="1.0" encoding="UTF-8"?--> */}

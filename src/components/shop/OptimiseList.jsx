@@ -9,6 +9,7 @@ export default function OptimiseList({ productData }) {
     return (
       <div key={index}>
         <ProductCard 
+          id={product.id}
           imageUrl={product.imageUrl} 
           altText={product.altText} 
           title={product.title} 
@@ -22,9 +23,9 @@ export default function OptimiseList({ productData }) {
 
   return (
     <List
-      height={500} // adjust based on your needs
+      height={500}
       itemCount={productData.length}
-      itemSize={100} // adjust based on your needs
+      itemSize={100}
     >
       {renderRow}
     </List>
