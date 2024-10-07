@@ -12,7 +12,7 @@ export default function ProductList({ addToCart, category, searchTerm }) {
     const itemsPerPage = 10 
 
     const openPopup = (product) => {
-        // setSelectedProduct(product)
+        // setSelectedProduct(product)z
     }
 
     const closePopup = () => {
